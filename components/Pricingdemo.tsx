@@ -1,0 +1,23 @@
+import PricingTable from "./pricing";
+
+export const Pricing = () => {
+  return (
+    <div className="bg-black text-white  bg-gradient-to-b from-primary via-black to-black py-[72px] sm:py-24 ">
+      <div className="container">
+        <h2 className="text-center font-bold text-5xl sm:text-6xl tracking-tighter">
+          Choisissez nos packages
+        </h2>
+        <div className="max-w-xl mx-auto">
+          <p className="text-center mt-5 text-xl text-white/70">
+            Explorez nos packages sur mesure pour répondre à vos besoins
+            spécifiques. Trouvez la solution parfaite pour propulser votre
+            entreprise vers de nouveaux sommets.
+          </p>
+        </div>
+        <div className="flex flex-col items-center justify-center sm:flex-row gap-4  px-6 md:px-24 py-[72px] sm:py-24  ">
+          <PricingTable />
+        </div>
+      </div>
+    </div>
+  );
+};
